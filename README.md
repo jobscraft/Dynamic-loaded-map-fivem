@@ -13,32 +13,31 @@ TriggerEvent("DLM:RegisterIpl",*'IPlName',**State(bool))
 
 Register multiple ymap (reduce server resource)
 --
-     ARRAYOFNAMES = {
+     ArrayOfNames = {
         {name = *"ymap1",state = **State},
         {name = "ymap2",state = State},
         {name = "ymap3",state = State},
     } 
-TriggerEvent("DLM:RegisterIplByArray",'ARRAYOFNAME',DEFAULT state (bool))
+TriggerEvent("DLM:RegisterIplByArray",'ArrayOfNames',DEFAULT state (bool))
 
  
 Update State of a streamed ymap
 --
 
-TriggerEvent("DLM:UpdateSv",'IPLNAME',DEFAULT state (bool))
+TriggerEvent("DLM:UpdateSv",'IPlName',State (bool))
 
-Update the ymap loaded across the server
 
 Update State of ymap by array
 --
 
 
-     ARRAYOFNAMES = {
+     ArrayOfNames = {
         {name = *"ymap1",state = **State},
         {name = "ymap2",state = State},
         {name = "ymap3",state = State},
     }  
 
-TriggerEvent("DLM:UpdateSvByArray",ARRAYOFNAMES)
+TriggerEvent("DLM:UpdateSvByArray",ArrayOfNames)
 
 
 *: this is your ymap name (file name) <br/>
