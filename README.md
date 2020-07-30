@@ -42,3 +42,10 @@ TriggerEvent("DLM:UpdateSvByArray",ArrayOfNames)
 
 *: this is your ymap name (file name) <br/>
 **: this is the default state of the IPL (if you want to stream it by default or not)
+
+Script test
+--
+
+coordinates     x:1397 y:-746 Z:66 
+
+type /dlm up ( to load next step and down to reverse )
