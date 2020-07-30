@@ -8,7 +8,7 @@ this script sync loading of IPL across the server
 
 only register one ymap 
 --
-TriggerEvent("DLM:RegisterIpl",*'IPLNAME',**STATE(bool))
+TriggerEvent("DLM:RegisterIpl",*'IPlName',**State(bool))
 
 
 Register multiple ymap (reduce server resource)
